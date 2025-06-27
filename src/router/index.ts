@@ -28,6 +28,12 @@ export const routes = [
       { path: "", name: "Search", component: () => import("@/views/SearchView.vue") },
     ],
   },
+  {
+    path: `${baseUrl}/footer`,
+    children: [
+      { path: "", name: "Footer", component: () => import("@/views/FooterSwitchHelpView.vue") },
+    ],
+  },
 ];
 
 export const router = createRouter({

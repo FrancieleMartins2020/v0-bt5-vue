@@ -13,7 +13,9 @@
       "about": "Sobre",
       "contact": "Contato",
       "contacts": "Contato",
-      "search": "Buscar"
+      "search": "Buscar",
+      "title": "Titulo",
+      "footer": "Alterar Rodapé"
     },
     "footer": {
       "title": "Universidade Tecnológica Federal do Paraná (UTFPR)",
@@ -41,7 +43,7 @@
       "title": "Sobre nós",
       "paragraph1": "Este site foi desenvolvido como parte da disciplina <strong>Web Front-End II</strong> da UTFPR, utilizando Vue 3, Vite, TypeScript, Beercss e i18n.",
       "paragraph2": "O projeto demonstra boas práticas de front-end, com suporte a múltiplos idiomas, formulário funcional e responsividade.",
-      "paragraph3": "Desenvolvido por <strong>Vinícius Tabarão</strong>, aluno UTFPR."
+      "paragraph3": "Desenvolvido por <strong>Franciele Martins</strong>, aluno UTFPR."
     },
     "contactPage": {
       "title": "Fale conosco",
@@ -58,6 +60,7 @@
       "welcomeMessage": "Bem-vindo à página principal do nosso site."
     }
   },
+
   "en": {
     "welcome": "Welcome to our website!",
     "language": "Language",
@@ -71,7 +74,8 @@
       "home": "Home",
       "about": "About",
       "contact": "Contact",
-      "contacts": "Contact"
+      "contacts": "Contact",
+      "footer": "Alter Footer"
     },
     "footer": {
       "title": "Federal University of Technology – Paraná (UTFPR)",
@@ -80,6 +84,7 @@
       "address": "R. Cristo Rei, 19 – Vila Becker, Toledo – PR, 85902-490",
       "phone": "+55  (45) 3379-6800",
       "email": "contato@utfpr.edu.br",
+      "copyright": "© 2025 Federal University of Technology – Paraná. All rights reserved.",
       "socialMedia": {
         "whatsapp": "Link to WhatsApp",
         "twitter": "Link to Twitter",
@@ -115,6 +120,7 @@
       "welcomeMessage": "Welcome to the main page of our website."
     }
   },
+
   "es": {
     "welcome": "¡Bienvenido a nuestro sitio web!",
     "language": "Idioma",
@@ -126,9 +132,10 @@
     },
     "routes": {
       "home": "Inicio",
-      "about": "Sobre",
+      "about": "Acerca",
       "contact": "Contacto",
-      "contacts": "Contacto"
+      "contacts": "Contacto",
+      "footer": "Alterar Rodapé"
     },
     "footer": {
       "title": "Universidad Tecnológica Federal de Paraná (UTFPR)",
@@ -137,6 +144,7 @@
       "address": "R. Cristo Rei, 19 – Vila Becker, Toledo – PR, 85902-490",
       "phone": "+55 (45) 3379-6800",
       "email": "contato@utfpr.edu.br",
+      "copyright": "© 2025 Universidad Tecnológica Federal de Paraná. Todos los derechos reservados.",
       "socialMedia": {
         "whatsapp": "Enlace a WhatsApp",
         "twitter": "Enlace a Twitter",
@@ -173,3 +181,4 @@
     }
   }
 }
+

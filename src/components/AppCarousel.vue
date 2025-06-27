@@ -2,40 +2,41 @@
 import { ref } from 'vue'
 
 const currentSlide = ref(0)
-
 const slides = [
   { 
-    image: 'https://storage.alboom.ninja/sites/33900/albuns/693318/utfpr_-_toledo_bloco_a__5_.png?t=1597589780'
+      image: 'https://storage.alboom.ninja/sites/33900/albuns/693318/utfpr_-_toledo_bloco_a__5_.png?t=1597589780', 
+      //title: 'Bloco A', 
   },
   {
-    image: 'https://storage.alboom.ninja/sites/33900/albuns/693318/utfpr_-_toledo__1_.png?t=1597589776',
+    image :'https://storage.alboom.ninja/sites/33900/albuns/693318/utfpr_-_toledo__1_.png?t=1597589776',
+    //title: 'Bloco C.1'
   },
   {
     image: 'https://storage.alboom.ninja/sites/33900/albuns/693318/utfpr_-_toledo__6_.png?t=1597589777',
+    //title: 'Bloco C.2'
   },
   { 
-    image: 'https://gazetadetoledo.com.br/wp-content/uploads/2024/09/UTFPR_campus_Toledo_foto_Carlos_Rodrigues.jpg', 
+      image: 'https://gazetadetoledo.com.br/wp-content/uploads/2024/09/UTFPR_campus_Toledo_foto_Carlos_Rodrigues.jpg', 
+      //title: 'UTFPR', 
+      //description: 'UTFPR Entrada' 
   },
   {
     image: 'https://integrae.com.br/wp-content/uploads/2019/07/raposa.png',
+    //title: 'Raposa_A'
   },
   {
     image: 'https://integrae.com.br/wp-content/uploads/2018/11/WhatsApp-Image-2018-11-23-at-12.19.44-1024x683.jpeg',
+    //title: 'Raposa_B'
   },
   { 
-    image: 'https://www.utfpr.edu.br/noticias/toledo/raposa/@@images/image-1280-4e89e65ff82c080be26c69c4a55f46fe.jpeg', 
-  }
+      image: 'https://www.utfpr.edu.br/noticias/toledo/raposa/@@images/image-1280-4e89e65ff82c080be26c69c4a55f46fe.jpeg', 
+     //title: 'Raposa_C'' 
+  },
 ]
 
-const nextSlide = () => {
-  currentSlide.value = (currentSlide.value + 1) % slides.length
-}
-const prevSlide = () => {
-  currentSlide.value = (currentSlide.value - 1 + slides.length) % slides.length
-}
-const goToSlide = (index: number) => {
-  currentSlide.value = index
-}
+const nextSlide = () => { currentSlide.value = (currentSlide.value + 1) % slides.length }
+const prevSlide = () => { currentSlide.value = (currentSlide.value - 1 + slides.length) % slides.length }
+const goToSlide = (index: number) => { currentSlide.value = index }
 </script>
 
 <template>
@@ -46,8 +47,10 @@ const goToSlide = (index: number) => {
         :key="index"
         class="slide"
       >
-        <img :src="slide.image"/>
+        <img :src="slide.image" :alt="slide.title" />
         <div class="slide-content">
+          <h3>{{ slide.title }}</h3>
+          <p>{{ slide.description }}</p>
         </div>
       </div>
     </div>
@@ -97,8 +100,6 @@ const goToSlide = (index: number) => {
   color: white;
   background: rgba(0, 0, 0, 0.5);
   padding: 10px;
-  max-width: 80%;
-  border-radius: 0.5rem;
 }
 
 .prev, .next {
@@ -110,7 +111,6 @@ const goToSlide = (index: number) => {
   border: none;
   padding: 10px;
   cursor: pointer;
-  z-index: 10;
 }
 
 .prev {

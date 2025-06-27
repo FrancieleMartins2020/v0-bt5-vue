@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
 import Navbar from "@/components/NavBar.vue"; // Importe o Navbar.vue
-import FooterBar from "@/components/FooterBar.vue"; 
+import FooterBar from "@/components/FooterBar.vue";
+import GenericFooter from "@/components/GenericFooter.vue"; 
 
 const { t } = useI18n(); // Remova 'locale' pois não é usado
 </script>
@@ -21,6 +22,8 @@ const { t } = useI18n(); // Remova 'locale' pois não é usado
     </main>
     
     <!-- Criar rodapé -->
+    <!-- <GenericFooter /> -->
     <FooterBar />
+    
   </div>
 </template> 
