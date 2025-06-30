@@ -1,7 +1,3 @@
-Claro! Abaixo está uma versão mais profissional, organizada e apresentável do seu `README.md`, separando os tópicos **já desenvolvidos**, os **a desenvolver** e os **novos desenvolvimentos feitos por você**, com sugestões claras para próximos passos:
-
----
-
 # 📦 Projeto Base Vue 3 + Bootstrap 5 (`v0-bt5-vue`)
 
 Este é um projeto inicial pensado como base para novos projetos Vue 3 com integração ao Bootstrap 5. Ele foi iniciado com foco em boas práticas de estruturação de layout, tema claro/escuro, i18n e extensibilidade futura com frameworks e componentes adicionais.
