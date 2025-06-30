@@ -91,7 +91,7 @@ npm run build
 ---
 
 👨‍💻 Autor
-Franciele Lemos Martins
-RA: 1111183
-Disciplina: Desenvolvimento Web Front-End 2
-Professor: 	Eduardo Pezutti Beletato Dos Santos
+* Franciele Lemos Martins
+* RA: 1111183
+* Disciplina: Desenvolvimento Web Front-End 2
+* Professor: 	Eduardo Pezutti Beletato Dos Santos
