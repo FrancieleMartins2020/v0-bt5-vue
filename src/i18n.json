@@ -58,6 +58,25 @@
     "homePage": {
       "title": "Página Inicial",
       "welcomeMessage": "Bem-vindo à página principal do nosso site."
+    },
+    "footerSwitchHelp":{
+      "title": "Como alternar entre rodapés no Vue",
+      "form": {
+        "paragraph1": "Este projeto possui dois componentes de rodapé que podem ser usados conforme sua preferência:",
+        "subtitle": "Passo 1: Localize o arquivo ",
+        "paragraph2": "e ",
+        "paragraph3": "Vá até a pasta ",
+        "paragraph4": "Este é o componente raiz da sua aplicação.",
+        "subtitle1": " Passo 2: Verifique os imports",
+        "paragraph5": "No início do arquivo, devem estar importados os dois rodapés:",
+        "subtitle2": " Passo 3: Altere o rodapé desejado no ",
+        "paragraph6": "Você encontrará algo assim no final do",
+        "paragraph7": "Criar rodapé",
+        "paragraph8": "Para alternar entre os componentes, comente um e descomente o outro:",
+        "paragraph9": "Para usar o ",
+        "subtitle3": "Exemplo completo com ",
+        "paragraph10": "Com isso, você consegue alternar visualmente qual rodapé deseja exibir em sua aplicação Vue."
+      }
     }
   },
 
@@ -118,6 +137,25 @@
     "homePage": {
       "title": "Home Page",
       "welcomeMessage": "Welcome to the main page of our website."
+    },
+    "footerSwitchHelp":{
+      "title": "How to switch between footers in Vue",
+      "form": {
+        "paragraph1": "This project has two footer components that can be used as you prefer:",
+        "subtitle": " Step 1: Locate the file ",
+        "paragraph2": "and ",		
+        "paragraph3": "Go to the folder",
+        "subtitle1": " Step 2: Check the imports",
+        "paragraph4": "This is the root component of your application.",
+        "subtitle2": " Step 3: Change the desired footer in the",
+        "paragraph5": "At the beginning of the file, the two footers must be imported:",
+        "paragraph6": "You will find something like this at the end of the",
+        "paragraph7": "Create footer ",
+        "paragraph8": "To switch between components, comment one and uncomment the other:",
+        "paragraph9": "To use the ",
+        "subtitle3": "Complete example with ",
+        "paragraph10": "With this, you can visually switch which footer you want to display in your Vue application."
+      }
     }
   },
 
@@ -178,7 +216,25 @@
     "homePage": {
       "title": "Página de Inicio",
       "welcomeMessage": "Bienvenido a la página principal de nuestro sitio web."
+    },
+    "footerSwitchHelp":{
+      "title": "Cómo cambiar entre pies de página en Vue",
+      "form": {
+        "paragraph1": "Este proyecto tiene dos componentes de pie de página que puedes utilizar como prefieras:",
+        "subtitle": " Paso 1: Localiza el archivo ",
+		    "paragraph2": "y ",
+        "paragraph3": "Ir a la carpeta",
+        "paragraph4": "Este es el componente raíz de su aplicación.",
+        "subtitle1": " Paso 2: Verificar las importaciones",
+        "paragraph5": "Al inicio del archivo se deben importar los dos pies de página:",
+        "subtitle2": " Paso 3: Cambie el pie de página deseado en el",
+        "paragraph6": "Encontrarás algo así al final de la",
+        "paragraph7": "Crear pie de página",
+        "paragraph8": "Para cambiar entre componentes, comente uno y descomente el otro:",
+        "paragraph9": "Para usar el ",
+        "subtitle3": "Ejemplo completo con ",
+        "paragraph10": "Con esto, puedes cambiar visualmente el pie de página que deseas mostrar en tu aplicación Vue."
+      }
     }
   }
 }
-
