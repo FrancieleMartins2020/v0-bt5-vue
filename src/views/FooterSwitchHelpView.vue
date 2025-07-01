@@ -1,19 +1,36 @@
 <template>
   <main class="container py-5">
-    <h1>Como alternar entre rodapés no Vue</h1>
+    <h1>{{ t('footerSwitchHelp.title') }}</h1>
 
     <p>
-      Este projeto possui dois componentes de rodapé que podem ser usados conforme sua preferência:
-      <code>&lt;GenericFooter /&gt;</code> e <code>&lt;FooterBar /&gt;</code>.
+      {{ t('footerSwitchHelp.form.paragraph1') }}      
+      <code>
+        &lt;GenericFooter /&gt;
+      </code>
+      {{ t('footerSwitchHelp.form.paragraph2') }}
+      <code>
+        &lt;FooterBar /&gt;
+      </code>.
     </p>
 
-    <h4 class="mt-4">📁 Passo 1: Localize o arquivo <code>App.vue</code></h4>
+    <h4 class="mt-4">📁 {{ t('footerSwitchHelp.form.subtitle') }}
+      <code>
+        App.vue
+      </code>
+    </h4>
+
     <p>
-      Vá até a pasta <strong><code>src/views/App.vue</code></strong>. Este é o componente raiz da sua aplicação.
+      {{ t('footerSwitchHelp.form.paragraph3') }}
+      <strong>
+        <code>
+          src/views/App.vue
+        </code>
+      </strong>
+      {{ t('footerSwitchHelp.form.paragraph4') }}
     </p>
 
-    <h4 class="mt-4">🔗 Passo 2: Verifique os imports</h4>
-    <p>No início do arquivo, devem estar importados os dois rodapés:</p>
+    <h4 class="mt-4">🔗{{ t('footerSwitchHelp.form.subtitle1') }}</h4>
+    <p>{{ t('footerSwitchHelp.form.paragraph5') }}</p>
 
     <pre>
       <code>
@@ -22,23 +39,36 @@
       </code>
     </pre>
 
-    <h4 class="mt-4">🧩 Passo 3: Altere o rodapé desejado no <code>&lt;template&gt;</code></h4>
+    <h4 class="mt-4">🧩{{ t('footerSwitchHelp.form.subtitle2') }}
+      <code>
+        &lt;template&gt;
+      </code>
+    </h4>
 
-    <p>Você encontrará algo assim no final do `App.vue`:</p>
+    <p>{{ t('footerSwitchHelp.form.paragraph6') }} `App.vue`:</p>
 
     <pre>
       <code>
-        &lt;!-- Criar rodapé --&gt;
+        &lt;!-- {{ t('footerSwitchHelp.form.paragraph7') }} --&gt;
         &lt;!-- &lt;GenericFooter /&gt; --&gt;
         &lt;FooterBar /&gt;
       </code>
     </pre>
 
-    <p>Para alternar entre os componentes, comente um e descomente o outro:</p>
+    <p>{{ t('footerSwitchHelp.form.paragraph8') }}</p>
 
     <ul>
-      <li><strong>Para usar o <code>GenericFooter</code>:</strong></li>
+      <li>
+        <strong>
+          {{ t('footerSwitchHelp.form.paragraph9') }}
+          <code>
+            GenericFooter
+          </code>
+          :
+        </strong>
+      </li>
     </ul>
+
     <pre>
       <code>
         &lt;GenericFooter /&gt;
@@ -47,7 +77,15 @@
     </pre>
 
     <ul>
-      <li><strong>Para usar o <code>FooterBar</code>:</strong></li>
+      <li>
+        <strong>
+          {{ t('footerSwitchHelp.form.paragraph9') }}
+          <code>
+            FooterBar
+          </code>
+          :
+        </strong>
+      </li>
     </ul>
 
     <pre>
@@ -57,7 +95,11 @@
       </code>
     </pre>
 
-    <h4 class="mt-4">✅ Exemplo completo com <code>&lt;GenericFooter /&gt;</code></h4>
+    <h4 class="mt-4">✅ {{ t('footerSwitchHelp.form.subtitle3') }}
+      <code>
+        &lt;GenericFooter /&gt;
+      </code>
+    </h4>
 
     <pre>
       <code>
@@ -81,10 +123,12 @@
     </pre>
 
     <p class="mt-4 text-muted">
-      Com isso, você consegue alternar visualmente qual rodapé deseja exibir em sua aplicação Vue.
+      {{ t('footerSwitchHelp.form.paragraph10') }}
     </p>
   </main>
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 </script>
